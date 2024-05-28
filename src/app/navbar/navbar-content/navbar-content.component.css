@@ -1,0 +1,36 @@
+.nav_bar{
+    background-color: black;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+   
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: inherit; /* Mantém a cor padrão do texto */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    display: block; /* Transforma os links em elementos de bloco */
+    background-color: black; /* Define o fundo dos links como transparente */}
+
+a:hover {
+    color: inherit; 
+    background-color: bl    ;
+}
+
+.links{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+}
+
+ul {
+    list-style-type: none; /* Remove os estilos padrão de listagem */
+    padding: 0; /* Remove o padding padrão das listas */
+    margin: 0; /* Remove as margens padrão das listas */
+}
+
+li {
+    border: none; /* Remove a borda dos itens de lista */
+}
