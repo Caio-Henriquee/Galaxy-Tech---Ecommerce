@@ -8,11 +8,11 @@
 }
 
 a {
-    text-decoration: none; /* Remove o sublinhado padrão */
-    color: inherit; /* Mantém a cor padrão do texto */
-    cursor: pointer; /* Define o cursor como ponteiro */
-    display: block; /* Transforma os links em elementos de bloco */
-    background-color: black; /* Define o fundo dos links como transparente */}
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer;
+    display: block; 
+    background-color: black; /}
 
 a:hover {
     color: inherit; 
@@ -26,11 +26,16 @@ a:hover {
 }
 
 ul {
-    list-style-type: none; /* Remove os estilos padrão de listagem */
-    padding: 0; /* Remove o padding padrão das listas */
-    margin: 0; /* Remove as margens padrão das listas */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
 }
 
 li {
-    border: none; /* Remove a borda dos itens de lista */
+    border: none;
+}
+
+.cor{
+    background-color: red;
+    color: rgb(88, 32, 32);
 }
