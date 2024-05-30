@@ -5,8 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-  {path : '', component: RegistroComponent},
-  {path: 'login', component:LoginComponent},
+  {path : 'registro', component: RegistroComponent},
+  {path: '', component:LoginComponent},
   {path: 'home', component: HomeComponent},
 ];
 
