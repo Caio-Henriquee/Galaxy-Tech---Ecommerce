@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { LoginService } from '../login.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-registro',
   standalone: true,
-  imports: [RouterModule, CommonModule,],
+  imports: [RouterModule, CommonModule,FormsModule],
   templateUrl: './registro.component.html',
   styleUrl: './registro.component.css'
 })

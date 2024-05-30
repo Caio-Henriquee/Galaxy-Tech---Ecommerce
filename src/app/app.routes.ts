@@ -4,6 +4,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 
+
 export const routes: Routes = [
   {path : 'registro', component: RegistroComponent},
   {path: '', component:LoginComponent},
