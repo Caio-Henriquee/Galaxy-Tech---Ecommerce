@@ -1,0 +1,47 @@
+<div class="columns">
+  <div class="split left">
+    <div class="centered">
+      <h1 class="logo-text">Galaxy Tech</h1>
+    </div>
+  </div>
+  <div class="split right">
+    <div class="form-container">
+      <h1 class="title">Crie uma Conta</h1>
+      <form (submit)="registrar()">
+        <div class="field">
+          <label class="label">Insira seu nome</label>
+          <div class="control">
+            <input type="text" id="usuario" placeholder="Nome">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Insira seu email</label>
+          <div class="control">
+            <input type="email" id="email" id="email" placeholder="Email">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Insira sua senha</label>
+          <div class="control">
+            <input type="password" id="senha" placeholder="Senha">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Insira sua data de nascimento</label>
+          <div class="control">
+            <input type="date" id="dtNasc">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button type="submit" class="button is-primary is-fullwidth">Criar</button>
+          </div>
+        </div>
+      </form>
+      <p class="has-text-centered">
+        Já possui uma conta? <a routerLink="">Login</a>
+      </p>
+    </div>
+  </div>
+</div>
+
