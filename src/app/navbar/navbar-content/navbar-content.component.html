@@ -1,46 +1,28 @@
-<div class=" nav_bar tabs is-toggle is-small">
-    <ul>
-        <li class="is-active">
-            <a>
-                <span>Home</span>
-            </a>
-        </li>
-        <li>
-            <a>
-
-                <span>Acessorio</span>
-            </a>
-        </li>
-
-        <li>
-            <a>
-
-                <span>Acessorio 1 </span>
-            </a>
-        </li>
-        <li>
-            <a>
-                <span>Acessorio 2</span>
-            </a>
-        </li>
-
-        <li>
-            <a class="links">
-
-                <span>Acessorio 3 </span>
-            </a>
-        </li>
-        <li>
-    </ul>
-    <div tabs is-toggle is-small>
-        <ul>
-            <li>
-                <a>
-                    <span>Filtros</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    
-    
+<div class="nav_bar tabs is-toggle is-small">
+  <ul>
+    <li class="is-active">
+      <a routerLink="/home" >
+        <span>Home</span>
+      </a>
+    </li>
+  
+    <li>
+      <a routerLink="/home/acessorio" routerLinkActive="active" >
+        <span>Acessorio</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/home/perifericos" routerLinkActive="active">
+        <span>Perifericos</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/home/celulares" routerLinkActive="active">
+        <span>Celulares</span>
+      </a>
+    </li>
+  </ul>
+  <router-outlet></router-outlet>
 </div>
+
+

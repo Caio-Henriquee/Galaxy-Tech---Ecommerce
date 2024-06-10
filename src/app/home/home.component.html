@@ -5,23 +5,12 @@
     <nav>
         <app-navbar-content></app-navbar-content>
     </nav>
-
-    <section id="section1">
-        <div id="img_01">
-            <img class="imagens" src="/assets/Apple-Watch-Series-9.jpg" alt="">
-        </div>
-        <div id="img_02">
-            <img class="imagens" src="/assets/06135138391161.jpg" alt="">
-        </div>
+    
+    <section>
+      
+      <app-section-content></app-section-content>
     </section>
-
-    <section  class="section-cards">
-        <app-card-content *ngFor="let card of cards1" [card]="card"></app-card-content>
-    </section>
-
-    <section  class="section-cards">
-        <app-card-content *ngFor="let card of cards2" [card]="card"></app-card-content>
-    </section>
+    
 
     <footer class="footer">
         <div class="content has-text-centered">
