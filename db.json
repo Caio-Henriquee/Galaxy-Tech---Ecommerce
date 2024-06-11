@@ -1,0 +1,11 @@
+{
+  "usuariosRegistrados": [
+    {
+      "id": "6a04",
+      "usuario": "pedro",
+      "email": "pedrosouza@gmail.com",
+      "senha": "1234",
+      "dtNasc": "2003-09-09"
+    }
+  ]
+}

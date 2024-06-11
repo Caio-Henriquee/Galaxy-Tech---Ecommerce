@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 import { LoginService } from '../login.service';
 import { FormsModule } from '@angular/forms';
 
@@ -12,17 +12,19 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './registro.component.css'
 })
 export class RegistroComponent {
-    usuario : string = '';
-    email : string = '';
-    senha : string = '';
+    usuario : string = "";
+    email : string = "";
+    senha : string = "";
+    dtNasc : Date = new Date;
 
-    constructor(private RegistroService : LoginService){}
+    constructor(private RegistroService : LoginService, private router : Router){}
 
     registrar() : void {
-      this.RegistroService.registrar(this.usuario, this.email, this.senha);
-      console.log("Registrado com sucesso");
-      this.usuario = '';
-      this.email = '';
-      this.senha= '';
-    }
+      this.RegistroService.registrar(this.usuario, this.email, this.senha, this.dtNasc).subscribe(response =>{
+
+      console.log("Registrado com sucesso", response);
+      this.router.navigate([''])
+    });
+  }
+
 }
