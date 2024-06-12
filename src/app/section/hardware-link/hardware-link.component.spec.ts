@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavbarContentComponent } from './navbar-content.component';
+import { HardwareLinkComponent } from './hardware-link.component';
 
-describe('NavbarContentComponent', () => {
-  let component: NavbarContentComponent;
-  let fixture: ComponentFixture<NavbarContentComponent>;
+describe('HardwareLinkComponent', () => {
+  let component: HardwareLinkComponent;
+  let fixture: ComponentFixture<HardwareLinkComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavbarContentComponent]
+      imports: [HardwareLinkComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(NavbarContentComponent);
+    fixture = TestBed.createComponent(HardwareLinkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

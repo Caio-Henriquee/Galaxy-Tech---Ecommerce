@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TesteComponent } from './teste.component';
+import { PerifericoLinkComponent } from './periferico-link.component';
 
-describe('TesteComponent', () => {
-  let component: TesteComponent;
-  let fixture: ComponentFixture<TesteComponent>;
+describe('PerifericoLinkComponent', () => {
+  let component: PerifericoLinkComponent;
+  let fixture: ComponentFixture<PerifericoLinkComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TesteComponent]
+      imports: [PerifericoLinkComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TesteComponent);
+    fixture = TestBed.createComponent(PerifericoLinkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
