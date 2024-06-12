@@ -7,6 +7,7 @@ import { SectionContentComponent } from './section/section-content/section-conte
 import { HardwareLinkComponent } from './section/hardware-link/hardware-link.component';
 import { CarregadorLinkComponent } from './section/carregador-link/carregador-link.component';
 import { PerifericoLinkComponent } from './section/periferico-link/periferico-link.component';
+import { CriarProdutosComponent } from './criar-produtos/criar-produtos.component';
 
 
 export const routes: Routes = [
@@ -23,6 +24,7 @@ export const routes: Routes = [
       { path: 'content', component: SectionContentComponent },
       { path: 'hardware', component: HardwareLinkComponent },
       {path: 'celulares', component: CarregadorLinkComponent},
+      {path: 'criar',component:  CriarProdutosComponent}
     ],
   }
 ];

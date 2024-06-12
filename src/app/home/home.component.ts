@@ -4,9 +4,6 @@ import { SectionContentComponent } from '../section/section-content/section-cont
 
 import { RouterModule } from '@angular/router';
 
-
-
-
 @Component({
   selector: 'app-home',
   standalone: true,
