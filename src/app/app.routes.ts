@@ -24,7 +24,8 @@ export const routes: Routes = [
       { path: 'content', component: SectionContentComponent },
       { path: 'hardware', component: HardwareLinkComponent },
       {path: 'celulares', component: CarregadorLinkComponent},
-      {path: 'criar',component:  CriarProdutosComponent}
+      {path: 'criar',
+        loadComponent: ()=> import('./criar-produtos/criar-produtos.component').then(m => m.CriarProdutosComponent) }
     ],
   }
 ];
