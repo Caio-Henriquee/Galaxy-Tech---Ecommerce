@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
+import { producerAccessed } from '@angular/core/primitives/signals';
+import { ProdutosService } from '../service/produtos.service';
 
 @Component({
   selector: 'app-gerenciar-produtos',
@@ -7,6 +10,15 @@ import { Component } from '@angular/core';
   templateUrl: './gerenciar-produtos.component.html',
   styleUrl: './gerenciar-produtos.component.css'
 })
-export class GerenciarProdutosComponent {
+export class GerenciarProdutosComponent{
 
+  produtos: any[] = [];
+
+  produtosService = inject(ProdutosService);
+
+  ngOnInit(){
+    this.produtosService.getAll().subscribe((produtos)=>{
+      this.produtos = produtos;
+    })
+  }
 }

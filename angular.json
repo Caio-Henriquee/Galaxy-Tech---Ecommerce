@@ -73,8 +73,12 @@
               "buildTarget": "galaxyTech:build:development"
             }
           },
+          "options": {
+           "proxyConfig": "proxy.config.json"
+        },
           "defaultConfiguration": "development"
         },
+        
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
         },
