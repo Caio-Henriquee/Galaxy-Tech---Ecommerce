@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
-
+import { ProdutosService } from '../service/produtos.service';
+import { subscribe } from 'diagnostics_channel';
 @Component({
   selector: 'app-criar-produtos',
   standalone: true,
@@ -9,6 +10,9 @@ import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angula
   styleUrls: ['./criar-produtos.component.css']
 })
 export class CriarProdutosComponent {
+
+  ProdutosService = inject(ProdutosService)
+
   form = new FormGroup({
     nomeProduto: new FormControl<string>('', {
       nonNullable: true,
@@ -17,7 +21,7 @@ export class CriarProdutosComponent {
     quantidade: new FormControl<number | null>(null, {
       validators: [Validators.required, Validators.min(0)],
     }),
-    preco: new FormControl<number | null>(null, {
+    valor: new FormControl<number | null>(null, {
       validators: [Validators.required, Validators.min(0)],
     }),
     categoria: new FormControl<string>('', {
@@ -28,17 +32,24 @@ export class CriarProdutosComponent {
       nonNullable: true,
       validators: Validators.required,
     }),
-    foto: new FormControl<File | null>(null, {
+    foto: new FormControl<string>('', {
+      nonNullable: true,
       validators: Validators.required,
     })
   });
 
   onSubmit() {
-    this.form.controls.nomeProduto.value;
-    this.form.controls.quantidade.value;
-    this.form.controls.preco.value;
-    this.form.controls.categoria.value;
-    this.form.controls.descricao.value;
-    this.form.controls.foto.value
+    this.ProdutosService.post({
+     nome: this.form.controls.nomeProduto.value,
+      quantidade: this.form.controls.quantidade.value as number,
+      valor :this.form.controls.valor.value as number,
+      categoria: this.form.controls.categoria.value,
+      descricao :this.form.controls.descricao.value,
+      url: this.form.controls.foto.value
+    })
+    .subscribe(()=>{
+      alert('sucesso');
+    });
+    
   }
 }

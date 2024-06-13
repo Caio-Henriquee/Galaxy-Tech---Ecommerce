@@ -4,5 +4,6 @@ export interface produtos {
     valor: number;
     quantidade: number;
     descricao: string;
-    url: string
+    url: string;
+    categoria: string;
 }

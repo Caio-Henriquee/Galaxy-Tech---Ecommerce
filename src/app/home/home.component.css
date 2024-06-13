@@ -4,11 +4,8 @@
     padding: 0;
 }
 
-body {
-    height: 175vh;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.color {
+   
     background-color: rgb(208, 208, 208);
 }
 
