@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
 import { LoginService } from '../login.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-registro',
@@ -15,7 +15,7 @@ export class RegistroComponent {
     usuario : string = "";
     email : string = "";
     senha : string = "";
-    dtNasc : Date = new Date;
+    dtNasc : Date = new Date(0/0/0);
 
     constructor(private RegistroService : LoginService, private router : Router){}
 
