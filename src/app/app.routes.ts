@@ -8,6 +8,8 @@ import { HardwareLinkComponent } from './section/hardware-link/hardware-link.com
 import { CarregadorLinkComponent } from './section/carregador-link/carregador-link.component';
 import { PerifericoLinkComponent } from './section/periferico-link/periferico-link.component';
 import { CriarProdutosComponent } from './criar-produtos/criar-produtos.component';
+import { GerenciarProdutosComponent } from './gerenciar-produtos/gerenciar-produtos.component';
+
 
 
 export const routes: Routes = [
@@ -23,9 +25,13 @@ export const routes: Routes = [
       { path: 'acessorio', component: PerifericoLinkComponent },
       { path: 'content', component: SectionContentComponent },
       { path: 'hardware', component: HardwareLinkComponent },
-      {path: 'celulares', component: CarregadorLinkComponent},
-      {path: 'criar',
-        loadComponent: ()=> import('./criar-produtos/criar-produtos.component').then(m => m.CriarProdutosComponent) }
+      { path: 'celulares', component: CarregadorLinkComponent},
+      { path: 'criar',
+        loadComponent: ()=> import('./criar-produtos/criar-produtos.component').then(m => m.CriarProdutosComponent) 
+      },
+      {path: 'gerenciar',
+        loadComponent: ()=> import('./gerenciar-produtos/gerenciar-produtos.component').then(m => m.GerenciarProdutosComponent) 
+      }
     ],
   }
 ];
