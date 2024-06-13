@@ -4,3 +4,12 @@
     border-radius: 5px;
     width: 50%;
 }
+
+.colorButton{
+    background-color: #8041FA;
+    color: white ;
+  }
+
+ .colorLink{
+    color: white ;
+  }

@@ -31,6 +31,9 @@ export const routes: Routes = [
       },
       {path: 'gerenciar',
         loadComponent: ()=> import('./gerenciar-produtos/gerenciar-produtos.component').then(m => m.GerenciarProdutosComponent) 
+      },
+      {path: 'editar',
+        loadComponent: ()=> import('./editar-produtos/editar-produtos.component').then(m => m.EditarProdutosComponent) 
       }
     ],
   }

@@ -1,7 +1,10 @@
 <div class="container">
-    <a href="">Cadastrar novo produto</a>
+  <button class="button colorButton">
+    <a class="colorLink" [routerLink]="['/criar']" routerLinkActive="router-link-active" >Cadastrar novo produto</a>
+  </button>
+    
     @for (produto of produtos; track produto.id){
-    <div class="card width_container">
+    <div class="card width_container" (edit)="onEditDebbuger()">
       <header class="card-header">
         <p class="card-header-title">{{produto.nome}}</p>
         <button class="card-header-icon" aria-label="more options">
@@ -12,16 +15,20 @@
       </header>
       <div class="card-content">
         <div class="content">
-          <b>Preço: {{produto.valor}} </b> <br>
+          <b>Preço: {{produto.valor}} </b><br>
           <b>Quantidade: {{produto.quantidade}}</b><br>
           <b>Descrição:</b> {{produto.descricao}}<br>
-          <br />
+          <b>URl da imagem:</b> {{produto.url}}<br>
+       
         </div>
       </div>
-      <footer class="card-footer">
-        <a href="#" class="card-footer-item">Save</a>
-        <a href="#" class="card-footer-item">Edit</a>
-        <a href="#" class="card-footer-item">Delete</a>
+      <footer class="card-footer centralizarButton">
+        <button class="button colorButton" (click)="onEditDebbuger()">
+          <a class="colorLink">Editar</a>
+        </button>        
+        <button class="button colorRemove">
+          <a class="colorLink" >Remover</a>
+        </button>
       </footer>
     </div>
     }
