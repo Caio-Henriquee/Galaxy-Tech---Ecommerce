@@ -1,6 +1,33 @@
 {
     "produtos": [
-      { "id": "1", "nome": "produto_teste" }
+      {
+        "id": "1",
+        "nome": "Smartphone Galaxy",
+        "valor": 1200.50,
+        "quantidade": 15,
+        "descricao": "Smartphone de última geração com tela AMOLED e câmera de 108MP.",
+        "url": "https://example.com/smartphone-galaxy"
+      },
+
+      {
+        "id": "2",
+        "nome": "Notebook TechMaster",
+        "valor": 3500.00,
+        "quantidade": 8,
+        "descricao": "Notebook potente com processador Intel i7 e 16GB de RAM.",
+        "url": "https://example.com/notebook-techmaster"
+      },
+      
+      {
+        "id": "3",
+        "nome": "Fone de Ouvido Wireless",
+        "valor": 300.75,
+        "quantidade": 25,
+        "descricao": "Fone de ouvido com cancelamento de ruído e alta qualidade de som.",
+        "url": "https://example.com/fone-de-ouvido-wireless"
+      }
+      
+      
      
     ]
   }

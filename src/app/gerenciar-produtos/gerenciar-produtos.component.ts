@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { producerAccessed } from '@angular/core/primitives/signals';
 import { ProdutosService } from '../service/produtos.service';
+import { produtos } from '../interface/produtos.interface';
 
 @Component({
   selector: 'app-gerenciar-produtos',
@@ -12,7 +13,7 @@ import { ProdutosService } from '../service/produtos.service';
 })
 export class GerenciarProdutosComponent{
 
-  produtos: any[] = [];
+  produtos: produtos[] = [];
 
   produtosService = inject(ProdutosService);
 
