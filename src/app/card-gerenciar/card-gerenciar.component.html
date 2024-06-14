@@ -1,0 +1,27 @@
+<div class="card width_container"> 
+    <header class="card-header">
+      <p class="card-header-title">{{produtos().nome}}</p>
+      <button class="card-header-icon" aria-label="more options">
+        <span class="icon">
+          <i class="fas fa-angle-down" aria-hidden="true"></i>
+        </span>
+      </button>
+    </header>
+    <div class="card-content">
+      <div class="content">
+        <b>Preço: {{produtos().valor}} </b><br>
+        <b>Quantidade: {{produtos().quantidade}}</b><br>
+        <b>Descrição:</b> {{produtos().descricao}}<br>
+        <b>URl da imagem:</b> {{produtos().url}}<br>
+     
+      </div>
+    </div>
+    <footer class="card-footer centralizarButton">
+      <button class="button colorButton" (click)="edit.emit()">
+        <a class="colorLink" >Editar</a>
+      </button>        
+      <button class="button colorRemove">
+        <a class="colorLink" >Remover</a>
+      </button>
+    </footer>
+  </div>

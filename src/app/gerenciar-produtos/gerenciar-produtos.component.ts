@@ -4,13 +4,13 @@ import { producerAccessed } from '@angular/core/primitives/signals';
 import { ProdutosService } from '../service/produtos.service';
 import { produtos } from '../interface/produtos.interface';
 import { RouterLink, Router } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { CardGerenciarComponent } from '../card-gerenciar/card-gerenciar.component';
 
 
 @Component({
   selector: 'app-gerenciar-produtos',
   standalone: true,
-  imports: [RouterLink,CommonModule],
+  imports: [RouterLink,CardGerenciarComponent],
   templateUrl: './gerenciar-produtos.component.html',
   styleUrl: './gerenciar-produtos.component.css'
 })
@@ -21,7 +21,6 @@ export class GerenciarProdutosComponent{
   produtosService = inject(ProdutosService);
   router = inject(Router);
 
-  @Output() edit =  new EventEmitter();
 
  ngOnInit() {
   this.produtosService.getAll().subscribe((produtos) => {
@@ -29,16 +28,10 @@ export class GerenciarProdutosComponent{
   });
 }
 
-  
 
-  onEditDebbuger() {
-    debugger  
-    this.edit.emit();
-  }
-
-  onEdit() {
+  onEdit(produtos: produtos) {
     
-    this.router.navigateByUrl('/editar');
+    this.router.navigate(['/editar', produtos.id]);
   }
 }
 
