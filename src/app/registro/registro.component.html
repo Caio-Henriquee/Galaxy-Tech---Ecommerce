@@ -7,29 +7,29 @@
   <div class="split right">
     <div class="form-container">
       <h1 class="title">Crie uma Conta</h1>
-      <form (ngSubmit)="registrar()">
+      <form [formGroup]="form" (ngSubmit)="registrar()">
         <div class="field">
           <label class="label">Insira seu nome</label>
           <div class="control">
-            <input type="text" placeholder="Nome" [(ngModel)]="usuario" name="usuario">
+            <input type="text" placeholder="Nome" >
           </div>
         </div>
         <div class="field">
           <label class="label">Insira seu email</label>
           <div class="control">
-            <input type="email" placeholder="Email" [(ngModel)]="email" name="email">
+            <input type="email" placeholder="Email">
           </div>
         </div>
         <div class="field">
           <label class="label">Insira sua senha</label>
           <div class="control">
-            <input type="password" placeholder="Senha" [(ngModel)]="senha" name="senha">
+            <input type="password" placeholder="Senha">
           </div>
         </div>
         <div class="field">
           <label class="label">Insira sua data de nascimento</label>
           <div class="control">
-            <input type="date" id="dtNasc" [(ngModel)]="dtNasc" name="dtNasc">
+            <input type="date" id="dtNasc">
           </div>
         </div>
         <div class="field">

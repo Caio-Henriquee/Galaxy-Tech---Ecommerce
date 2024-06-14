@@ -1,0 +1,29 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "",
+      "valor": "",
+      "quantidade": "",
+      "descricao": "",
+      "url": "",
+      "categoria": ""
+    }
+  ],
+  "usuariosRegistrados": [
+    {
+      "id": "1",
+      "usuario": "",
+      "email": "",
+      "senha": "",
+      "dtNasc": ""
+    },
+    {
+      "id": "e3a3",
+      "usuario": "",
+      "email": "",
+      "senha": "",
+      "dtNasc": null
+    }
+  ]
+}
