@@ -1,16 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Component,EventEmitter, Output, inject } from '@angular/core';
-import { producerAccessed } from '@angular/core/primitives/signals';
 import { ProdutosService } from '../service/produtos.service';
 import { produtos } from '../interface/produtos.interface';
 import { RouterLink, Router } from '@angular/router';
 import { CardGerenciarComponent } from '../card-gerenciar/card-gerenciar.component';
+import { CommonModule } from '@angular/common';
+
 
 
 @Component({
   selector: 'app-gerenciar-produtos',
   standalone: true,
-  imports: [RouterLink,CardGerenciarComponent],
+  imports: [RouterLink,CardGerenciarComponent,CommonModule],
   templateUrl: './gerenciar-produtos.component.html',
   styleUrl: './gerenciar-produtos.component.css'
 })

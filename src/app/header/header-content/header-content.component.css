@@ -75,3 +75,11 @@
 .colorLink{
     color: rgb(0, 168, 168);
 }
+
+.colorLinkHeader{
+    color: #8041FA;
+}
+
+.colorLinkHeader:hover {
+    color: #000000;
+  }

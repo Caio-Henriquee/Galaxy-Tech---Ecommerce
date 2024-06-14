@@ -1,5 +1,6 @@
 <header class="header">
-    <div class="site-name">Galaxy Tech</div>
+    <div class="site-name">
+      <a class="colorLinkHeader" href="">Galaxy Tech</a></div>
     <div class="search-box">
         <input type="text" placeholder="Pesquisar" (input)="search($event)">
         <button type="button"><fa-icon [icon]="pesquisa" ></fa-icon></button>
@@ -16,12 +17,6 @@
             <a class="navbar-item colorLink "  [routerLink]="['/criar']" routerLinkActive="router-link-active">
                 Cadastrar
               </a>
-            <a class="navbar-item">
-              Components
-            </a>
-            <div class="navbar-item">
-              Version 1.0.0
-            </div>
           </div>
         </div>
 

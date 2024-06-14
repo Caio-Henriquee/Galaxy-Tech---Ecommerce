@@ -1,10 +1,9 @@
 <div class="container">
   <button class="button colorButton">
-    <a class="colorLink" [routerLink]="['/criar']" routerLinkActive="router-link-active" >Cadastrar novo produto</a>
+    <a class="colorLink" [routerLink]="['/criar']" routerLinkActive="router-link-active">Cadastrar novo produto</a>
   </button>
-    
-    @for (produto of produtos; track produto.id){
-      <app-card-gerenciar [produtos]="produto" (edit)="onEdit(produto)"></app-card-gerenciar>
-    }
-  </div>
   
+  @for (produto of produtos; track produto.id) {
+    <app-card-gerenciar [produtos]="produto" (edit)="onEdit(produto)"></app-card-gerenciar>
+  }
+</div>
