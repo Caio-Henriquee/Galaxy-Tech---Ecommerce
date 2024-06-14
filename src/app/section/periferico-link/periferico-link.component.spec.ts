@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavbarContentComponent } from './navbar-content.component';
+import { PerifericoLinkComponent } from './periferico-link.component';
 
-describe('NavbarContentComponent', () => {
-  let component: NavbarContentComponent;
-  let fixture: ComponentFixture<NavbarContentComponent>;
+describe('PerifericoLinkComponent', () => {
+  let component: PerifericoLinkComponent;
+  let fixture: ComponentFixture<PerifericoLinkComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavbarContentComponent]
+      imports: [PerifericoLinkComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(NavbarContentComponent);
+    fixture = TestBed.createComponent(PerifericoLinkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

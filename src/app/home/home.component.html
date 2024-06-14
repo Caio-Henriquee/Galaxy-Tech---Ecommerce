@@ -1,26 +1,45 @@
-<body>
-    <header>
-        <app-header-content></app-header-content>
-    </header>
-    <nav>
-        <app-navbar-content></app-navbar-content>
-    </nav>
-    
-    <section>
-      
-      <app-section-content></app-section-content>
-    </section>
-    
-
-    <footer class="footer">
-        <div class="content has-text-centered">
-          <p>
-            <strong>Galaxy Tech</strong>.
-            Ecommerce Online
-            <br>
-            Feito por Caio Henrtique e Pedro Magno
-          </p>
-        </div>
-      </footer>
-    
-</body>
+<div class="color">
+  <header>
+    <app-header-content></app-header-content>
+  </header>
+  <nav>
+    <div class="nav_bar tabs is-toggle is-small">
+      <ul>
+        <li>
+          <a routerLink="/content" routerLinkActive="is-active">
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/hardware" routerLinkActive="is-active">
+            <span>Hardware</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/acessorio" routerLinkActive="is-active">
+            <span>Acessorio</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/celulares" routerLinkActive="is-active">
+            <span>Celulares</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Galaxy Tech</strong>.
+        Ecommerce Online
+        <br>
+        Feito por Caio Henrique e Pedro Magno
+      </p>
+    </div>
+  </footer>
+  
+</div>
