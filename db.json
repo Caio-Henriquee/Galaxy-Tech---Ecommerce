@@ -26,7 +26,45 @@
       "descricao": "Fone de ouvido com cancelamento de ruído e alta qualidade de som.",
       "url": "https://example.com/fone-de-ouvido-wireless",
       "categoria": "acessorio"
+    },
+    {
+      "id": "09d1",
+      "nome": "",
+      "quantidade": null,
+      "valor": null,
+      "categoria": "",
+      "descricao": "",
+      "url": ""
     }
-  
+  ],
+  "usuariosRegistrados": [
+    {
+      "id": "1",
+      "usuario": "",
+      "email": "",
+      "senha": "",
+      "dtNasc": ""
+    },
+    {
+      "id": "e3a3",
+      "usuario": "",
+      "email": "",
+      "senha": "",
+      "dtNasc": null
+    },
+    {
+      "id": "90ef",
+      "usuario": "",
+      "email": "",
+      "senha": "",
+      "dtNasc": ""
+    },
+    {
+      "id": "3bce",
+      "usuario": "",
+      "email": "",
+      "senha": "",
+      "dtNasc": ""
+    }
   ]
 }

@@ -7,23 +7,23 @@
   <div class="split right">
     <div class="form-container">
       <h1 class="title">Crie uma Conta</h1>
-      <form (submit)="registrar()">
+      <form [formGroup]="form" (ngSubmit)="registrar()">
         <div class="field">
           <label class="label">Insira seu nome</label>
           <div class="control">
-            <input type="text" id="usuario" placeholder="Nome">
+            <input type="text" placeholder="Nome">
           </div>
         </div>
         <div class="field">
           <label class="label">Insira seu email</label>
           <div class="control">
-            <input type="email" id="email" id="email" placeholder="Email">
+            <input type="email" placeholder="Email">
           </div>
         </div>
         <div class="field">
           <label class="label">Insira sua senha</label>
           <div class="control">
-            <input type="password" id="senha" placeholder="Senha">
+            <input type="password" placeholder="Senha">
           </div>
         </div>
         <div class="field">
@@ -39,7 +39,7 @@
         </div>
       </form>
       <p class="has-text-centered">
-        Já possui uma conta? <a routerLink="">Login</a>
+        Já possui uma conta? <a routerLink="/login">Login</a>
       </p>
     </div>
   </div>
