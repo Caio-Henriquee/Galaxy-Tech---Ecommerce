@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CardContentComponent } from '../../card/card-content/card-content.component';
 import { CommonModule } from '@angular/common';
+import ProdutosService from '../../service/produtos.service';
+import { produtos } from '../../interface/produtos.interface';
 @Component({
   selector: 'app-section-content',
   standalone: true,
@@ -9,19 +11,21 @@ import { CommonModule } from '@angular/common';
   styleUrl: './section-content.component.css'
 })
 export class SectionContentComponent {
-  cards1 = [
-    { title: 'Monitor', image: '../../../assets/MONITOR.jpg', preco: '2000', description:'Monitor game 110v.' },
-    { title: 'Monitor', image: '../../../assets/MONITOR.jpg', preco: '2000',description:'Monitor game 110v.' },
-    { title: 'Monitor', image: '../../../assets/MONITOR.jpg', preco: '2000' ,description:'Monitor game 110v.'},
-    { title: 'Monitor', image: '../../../assets/MONITOR.jpg', preco: '2000',description:'Monitor game 110v.' },
-    { title: 'Monitor', image: '../../../assets/MONITOR.jpg', preco: '2000',description:'Monitor game 110v.' },
-  ];  
+  cards1: produtos[] = [];
+  cards2: produtos[] = [];
 
-  cards2= [
-    { title: 'Relogio', image: '../../assets/download.jpg', preco: '1400',description:'Smart Watch 110v.' },
-    { title: 'Relogio', image: '../../assets/download.jpg', preco: '1400' ,description:'Smart Watch 110v.'},
-    { title: 'Relogio', image: '../../assets/download.jpg', preco: '1400' ,description:'Smart Watch 110v.'},
-    { title: 'Relogio', image: '../../assets/download.jpg', preco: '1400',description:'Smart Watch 110v. '},  
-    { title: 'Relogio', image: '../../assets/download.jpg', preco: '1400' ,description:'Smart Watch 110v.'},
-  ];
+  constructor(private produtosService: ProdutosService) {}
+
+  ngOnInit(): void {
+    this.produtosService.getRandomProducts(10).subscribe(
+      (produtos: produtos[]) => {
+        const half = Math.ceil(produtos.length / 2);
+        this.cards1 = produtos.slice(0, half);
+        this.cards2 = produtos.slice(half, produtos.length);
+      },
+      error => {
+        console.error('Erro ao obter produtos aleatórios:', error);
+      }
+    );
+  }
 }

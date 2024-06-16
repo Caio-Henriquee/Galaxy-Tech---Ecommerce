@@ -9,7 +9,7 @@ import { CarregadorLinkComponent } from './section/carregador-link/carregador-li
 import { PerifericoLinkComponent } from './section/periferico-link/periferico-link.component';
 import { CriarProdutosComponent } from './criar-produtos/criar-produtos.component';
 import { GerenciarProdutosComponent } from './gerenciar-produtos/gerenciar-produtos.component';
-import { ProdutosService } from './service/produtos.service';
+import ProdutosService from './service/produtos.service';
 
 
 

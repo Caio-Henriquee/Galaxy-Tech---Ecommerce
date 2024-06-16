@@ -1,40 +1,166 @@
 {
   "produtos": [
     {
+      "id": "1",
+      "nome": "Mouse Gamer XYZ",
+      "valor": 150,
+      "quantidade": 15,
+      "descricao": "Mouse ergonômico para jogos com DPI ajustável.",
+      "url": "https://a-static.mlcdn.com.br/450x450/mouse-gamer-luminoso-usb-e-rgb/inoveaqui/16033937231/7a5d258eb83c3b3e08c993820cfa85d0.jpeg",
+      "categoria": "hardware"
+    },
+    {
       "id": "2",
-      "nome": "Notebook TechMaster",
-      "valor": 3500,
-      "quantidade": 8,
-      "descricao": "Notebook potente com processador Intel i7 e 16GB de RAM.",
-      "url": "https://example.com/notebook-techmaster",
-      "categoria": "hardaware"
+      "nome": "Teclado Mecânico RGB",
+      "valor": 250,
+      "quantidade": 10,
+      "descricao": "Teclado mecânico com iluminação RGB e switches Cherry MX.",
+      "url": "https://images.tcdn.com.br/img/img_prod/171693/180_teclado_gamer_gaming_master_k_mex_km_5228_rgb_8345_2_4af2385c49c3a972653916772a25f93e.jpg",
+      "categoria": "hardware"
     },
     {
       "id": "3",
-      "nome": "Fone de Ouvido Wireless",
-      "valor": 300.75,
-      "quantidade": 25,
-      "descricao": "Fone de ouvido com cancelamento de ruído e alta qualidade de som.",
-      "url": "https://example.com/fone-de-ouvido-wireless",
-      "categoria": "acessorio"
-    },
-    {
-      "id": "b42f",
-      "nome": "teste",
-      "quantidade": 43,
-      "valor": 343434,
-      "categoria": "Acessorio",
-      "descricao": "csadoadsok",
-      "url": "joao"
-    },
-    {
-      "id": "082d",
-      "nome": "teste",
+      "nome": "Monitor UltraWide 34\"",
+      "valor": 1200,
       "quantidade": 5,
+      "descricao": "Monitor curvo com resolução 3440x1440 e taxa de atualização de 144Hz.",
+      "url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTnHVrkdx7V3TBgjWTyqSrdS2hQqCDMG_Z0vUdrnRUydTIpk_VFrzzJsuMmp-Fqrat9yKqI68cO-v6cuXfhSjZdLiyeYO5ttTO_PFPNLlqNoLZO_s3HfyJZXw&usqp=CAE",
+      "categoria": "hardware"
+    },
+    {
+      "id": "4",
+      "nome": "Placa de Vídeo RTX 3080",
       "valor": 3000,
-      "categoria": "Hardware",
-      "descricao": "dfsfds",
-      "url": "432423"
+      "quantidade": 3,
+      "descricao": "Placa de vídeo com tecnologia Ray Tracing e 10GB de memória GDDR6X.",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUBHxqYSNvHDbygpmnvegalCGTfBm7mhMvJA&s",
+      "categoria": "hardware"
+    },
+    {
+      "id": "5",
+      "nome": "SSD NVMe 1TB",
+      "valor": 200,
+      "quantidade": 20,
+      "descricao": "Unidade de estado sólido de alta velocidade para armazenamento de dados.",
+      "url": "https://media.kingston.com/kingston/product/ktc-product-ssd-snv2s-1000g-1-zm-lg.jpg",
+      "categoria": "hardware"
+    },
+    {
+      "id": "6",
+      "nome": "Notebook Gamer ",
+      "valor": 4500,
+      "quantidade": 8,
+      "descricao": "Notebook com processador Intel i7, 16GB de RAM e placa de vídeo GTX 1660 Ti.",
+      "categoria": "dispositivos",
+      "url": "https://t17208.vtexassets.com/arquivos/ids/163534/nave_notebook_gamer_i5_rtx_3050_lunar_gm5ageo_Diagonal_Aberto_1000x1000.png?v=638346428925830000"
+    },
+    {
+      "id": "7",
+      "nome": "Ultrabook 14\"",
+      "valor": 3000,
+      "quantidade": 12,
+      "descricao": "Ultrabook leve e fino com processador Intel i5 e 8GB de RAM.",
+      "url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSqz-m0ircG-9IDvVQdNW4a5ybHWhTmdgXmEvOb1epzFqSoWQb9YOTL4_tPDH9xydlE6a6OzAtmEinaXOhiMddWe2eh1EsJfk2ajSV9rBP2qIUI1ioueOIa&usqp=CAE",
+      "categoria": "dispositivos"
+    },
+    {
+      "id": "8",
+      "nome": "Desktop XYZ",
+      "valor": 5000,
+      "quantidade": 4,
+      "descricao": "Desktop de alta performance com processador AMD Ryzen 9, 32GB de RAM e RTX 3080.",
+      "url": "https://a-static.mlcdn.com.br/450x450/computador-desktop-dell-vostro-i1200-m20d-12a-geracao-intel-core-i5-8gb-256gb-ssd-windows-11-com-monitor/dell/v3710w6500w1/fe0e341170d5d04e95d93a0ac56872af.jpeg",
+      "categoria": "dispositivos"
+    },
+    {
+      "id": "9",
+      "nome": "MacBook Pro 16\"",
+      "valor": 12000,
+      "quantidade": 2,
+      "descricao": "MacBook Pro com processador M1, 16GB de RAM e 1TB SSD.",
+      "url": "https://s2-techtudo.glbimg.com/WqAxQWICzwEqHzr419J_KB-XPGI=/0x0:1960x1274/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/B/3/hbQlftT3WCXDueMVFSqA/apple-macbook-pro-16-inch-screen-10182021.jpg",
+      "categoria": "dispositivos"
+    },
+    {
+      "id": "10",
+      "nome": "Chromebook XYZ",
+      "valor": 1500,
+      "quantidade": 10,
+      "descricao": "Chromebook com processador Intel Celeron, 4GB de RAM e 64GB de armazenamento.",
+      "url": "https://www.ubuy.com.br/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9zZW8vQWNlci1DaHJvbWVib29rLTMxNS0yMDE5LTE1LTYtSEQtSW50ZWwtQ2VsZXJvbi1ONDAyMC00R0ItUkFNLTEyOEdCLWVNTUMtU2lsdmVyLUNCMzE1LTNILUMwVlRfMDUzNzNiNjctYzAzYi00Y2ExLTlkZmMtYTdlNDJiNGRjZTViLmY5Y2ZiZmM4MmJlN2I5YmNkYWMwMzVmMjg5N2U4MGQ0LmpwZWc.jpg",
+      "categoria": "dispositivos"
+    },
+    {
+      "id": "0a65",
+      "nome": "Fone de Ouvido Jbl",
+      "quantidade": 8,
+      "valor": 1500,
+      "categoria": "perifericos",
+      "descricao": "Fone de ouvido com bluetooth",
+      "url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS0fV1zRJ5_xUS0znUveMZZXHAfjUvICmhe0_K_95ua5QPo5U9VKtbvYUngOOuL76I1ayFaFNZl6qSeJABHv5W3X67j8LsmaguW7Kw3G37xsZXWk8pqeF2RCuAFZsdnCe6qV4AnCg&usqp=CAc"
+    },
+    {
+      "id": "7b2a",
+      "nome": "Mouse Pad Gamer ",
+      "quantidade": 10,
+      "valor": 30,
+      "categoria": "perifericos",
+      "descricao": "Mouse Pad Gamer grande",
+      "url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTimGWnEBvkTWUnYfszO-J4Mb0YzVnwC_tZ5ytnzTTKCggMvwl3r20lHK7MvzAC55riHHcMCdj5H52h42CgvwT4ftdVJx5zjpp_Er2mxSb7IOtJzQND8Ape&usqp=CAE"
+    },
+    {
+      "id": "a0f5",
+      "nome": "Mouse Gamer",
+      "quantidade": 102,
+      "valor": 50,
+      "categoria": "perifericos",
+      "descricao": "Mouse Gamer com conector Usb",
+      "url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQBxAPbaL4ZBt9b0BA2iaJj8-gOvHCKL-JrgXs-BN-D2ktLS86RyIMFI0SZW-w1OU3R0YqyBjv_gQepQZoMB1R2HhIVvo3Av6H8qM1SxyPAzCLzcbD-quk3jw&usqp=CAE"
+    },
+    {
+      "id": "c3d7",
+      "nome": "Teclado Gamer RGB",
+      "quantidade": 25,
+      "valor": 200,
+      "categoria": "perifericos",
+      "descricao": "Teclado mecânico gamer com iluminação RGB e switches de alta durabilidade.",
+      "url": "https://images.tcdn.com.br/img/img_prod/171693/180_teclado_gamer_gaming_master_k_mex_km_5228_rgb_8345_2_4af2385c49c3a972653916772a25f93e.jpg"
+    },
+    {
+      "id": "d9e8",
+      "nome": "Webcam Full HD",
+      "quantidade": 15,
+      "valor": 120,
+      "categoria": "perifericos",
+      "descricao": "Webcam com resolução Full HD 1080p e microfone embutido para chamadas de vídeo.",
+      "url": "https://m.media-amazon.com/images/I/61-K2lXmHQL.jpg"
+    },
+    {
+      "id": "031b",
+      "nome": "Placa Mãe 1155 ",
+      "quantidade": 200,
+      "valor": 1000,
+      "categoria": "hardware",
+      "descricao": "Placa Mãe 1155 ddr3 2 banco",
+      "url": "https://cdn.awsli.com.br/600x450/1290/1290753/produto/63049997/11d4a53ff5.jpg"
+    },
+    {
+      "id": "7e02",
+      "nome": "Monitor Gamer Duex",
+      "quantidade": 15,
+      "valor": 2000,
+      "categoria": "perifericos",
+      "descricao": "Monitor Gamer Duex, 27 Pol, Full HD, IPS, 240Hz.",
+      "url": "https://img.terabyteshop.com.br/produto/g/monitor-gamer-duex-27-pol-full-hd-ips-240hz-1ms-hdmidp-dx270ghq-240hz_185172.jpg"
+    },
+    {
+      "id": "cc03",
+      "nome": "Computador Gamer Intel ",
+      "quantidade": 20,
+      "valor": 5000,
+      "categoria": "dispositivos",
+      "descricao": "Computador Gamer Fácil Intel Core I5 3a Geração, 8GB, GTX 1050ti 4GB, SSD 240GB, Fonte 500w\n",
+      "url": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/169047/Computador-Gamer-F-cil-Intel-Core-I5-3a-Gera-o-8GB-GTX-1050ti-4GB-SSD-240GB-Fonte-500w_1701200351_gg.jpg"
     }
   ]
 }

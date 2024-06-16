@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output, inject, ViewChild } from '@angular/core';
-import { ProdutosService } from '../service/produtos.service';
+import ProdutosService from '../service/produtos.service';
 import { produtos } from '../interface/produtos.interface';
 import { RouterLink, Router } from '@angular/router';
 import { CardGerenciarComponent } from '../card-gerenciar/card-gerenciar.component';

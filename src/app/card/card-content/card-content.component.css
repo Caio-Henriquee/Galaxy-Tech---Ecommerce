@@ -7,6 +7,12 @@
     width: 260px;
 }
 
+.card-image img {
+    width: 100%;
+    height: 200px; /* Altura fixa para padronizar os tamanhos das imagens */
+    object-fit: cover; /* Mantém a proporção da imagem e cobre todo o espaço */
+}
+
 .color_text {
     color: #8041FA;
     display: flex;
@@ -43,7 +49,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto; 
+    height: auto;
 }
 
 .modal-close {
@@ -60,7 +66,10 @@
     width: 100%;
 }
 
-.modal-image {
+.modal-image img {
+    width: 100%;
+    max-height: 300px; /* Altura máxima para a imagem no modal */
+    object-fit: cover;
     margin-bottom: 20px;
 }
 
@@ -68,26 +77,50 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; 
+    text-align: center;
 }
 
 .modal-title {
-    font-size: 24px;
+    font-size: 5vw; /* Fonte responsiva */
     margin-bottom: 10px;
 }
 
 .modal-price {
-    font-size: 20px;
+    font-size: 4vw; /* Fonte responsiva */
     margin-bottom: 10px;
     color: #8041FA;
 }
 
 .modal-description {
-    font-size: 16px;
+    font-size: 3vw; /* Fonte responsiva */
     margin-bottom: 20px;
 }
 
 .modal-button {
     background-color: #8041FA;
     color: white;
+}
+
+@media (min-width: 600px) {
+    .modal-title {
+        font-size: 24px;
+    }
+
+    .modal-price {
+        font-size: 20px;
+    }
+
+    .modal-description {
+        font-size: 16px;
+    }
+}
+
+.title {
+    font-size: 4vw; /* Fonte responsiva */
+}
+
+@media (min-width: 600px) {
+    .title {
+        font-size: 24px;
+    }
 }

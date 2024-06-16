@@ -1,7 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { produtos } from '../../interface/produtos.interface';
-import { ProdutosService } from '../../service/produtos.service';
+import ProdutosService from '../../service/produtos.service';
 import { SectionLiksComponent } from '../section-liks/section-liks.component';
 import { CommonModule } from '@angular/common';
 

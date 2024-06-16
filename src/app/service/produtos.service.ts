@@ -3,11 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import { produtos } from '../interface/produtos.interface';
 import { ProdutosPayload } from '../interface/payload-produtos.interface';
 import { map } from 'rxjs/operators'; 
+import { Observable } from 'rxjs/internal/Observable';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProdutosService {
+export default class ProdutosService {
     httpClient = inject(HttpClient)
 
   getAll(){
@@ -32,8 +33,32 @@ export class ProdutosService {
 
   getHardwareProducts() {
     return this.httpClient.get<produtos[]>('api/produtos').pipe(
-      map((produtosArray: produtos[]) => produtosArray.filter(produto => produto.categoria === 'Hardware'))
+      map((produtosArray: produtos[]) => produtosArray.filter(produto => produto.categoria === 'hardware'))
+    );
+
+  }
+  
+  getDispositivosProducts() {
+    return this.httpClient.get<produtos[]>('api/produtos').pipe(
+      map((produtosArray: produtos[]) => produtosArray.filter(produto => produto.categoria === 'dispositivos'))
     );
   }
+
+  getPerifericosProducts() {
+    return this.httpClient.get<produtos[]>('api/produtos').pipe(
+      map((produtosArray: produtos[]) => produtosArray.filter(produto => produto.categoria === 'perifericos'))
+    );
+  }
+
+  getRandomProducts(n: number): Observable<produtos[]> {
+    return this.getAll().pipe(
+      map((produtosArray: produtos[]) => {
+        const shuffled = produtosArray.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, n);
+      })
+    );
+  }
+
+
 
 }

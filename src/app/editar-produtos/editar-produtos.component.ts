@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
-import { ProdutosService } from '../service/produtos.service';
+import ProdutosService from '../service/produtos.service';
 import { Router } from 'express';
 import { ActivatedRoute, ActivationEnd } from '@angular/router';
 import { produtos } from '../interface/produtos.interface';

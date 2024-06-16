@@ -1,19 +1,24 @@
-<div class="card container" (click)="toggleCard()">
-    <div class="card-image">
-        <figure class="image is-4by3">
-            <img [src]="card.url" alt="{{ card.nome }}">
-        </figure>
-    </div>
-    <div class="card-content">
-        <div class="media">
-            <div class="media-left"></div>
-            <div class="media-content">
-                <p class="title is-4">{{ card.nome }}</p>
-                <h1 class="title color_text is-5">R$ {{ card.valor }}</h1>
-                <button class="button is-link color_button">Adicionar ao Carrinho</button>
+<div class="cards-container">
+    <div class="card container" (click)="toggleCard()">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img [src]="card.url" alt="{{ card.nome }}">
+            </figure>
+        </div>
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left"></div>
+                <div class="media-content">
+                    <p class="title">{{ card.nome }}</p>
+                    <h1 class="title color_text">R$ {{ card.valor }}</h1>
+                    <button class="button is-link color_button">Adicionar ao Carrinho</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Repita para outros cards -->
+
 </div>
 
 <div class="modal" *ngIf="isCardOpen">
@@ -22,17 +27,15 @@
         <button class="modal-close is-large" aria-label="close" (click)="toggleCard()"></button>
         <div class="modal-body">
             <div class="modal-image">
-                    <img [src]="card.url" alt="{{ card.nome }}">
+                <img [src]="card.url" alt="{{ card.nome }}">
             </div>
             <div class="modal-details">
                 <p class="modal-title">{{ card.nome }}</p>
                 <h1 class="modal-price">R$ {{ card.valor }}</h1>
                 <p class="modal-description">{{ card.descricao }}</p>
+                <p class="modal-description">Quantidade: {{ card.quantidade }}</p>
                 <button class="button is-link modal-button">Adicionar ao Carrinho</button>
             </div>
         </div>
     </div>
 </div>
-
-
-    

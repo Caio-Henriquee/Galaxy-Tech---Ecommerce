@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
-import { ProdutosService } from '../service/produtos.service';
+import ProdutosService from '../service/produtos.service';
 import { subscribe } from 'diagnostics_channel';
 @Component({
   selector: 'app-criar-produtos',
