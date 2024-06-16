@@ -15,6 +15,7 @@ import { title } from 'node:process';
 export class RegistroComponent {
 
   RegistroService = inject(LoginService);
+  Router = inject(Router);
 
     form = new FormGroup({
       usuario : new FormControl<string>('', {nonNullable : true,
@@ -30,16 +31,34 @@ export class RegistroComponent {
       }),
     })
 
-    registrar() : void {
+
+  formSubmitAttempt = false;
+
+  registrar(): void {
+    this.formSubmitAttempt = true;
+    if (this.form.valid) {
       this.RegistroService.post({
-        usuario : this.form.controls.usuario.value,
-        email : this.form.controls.email.value,
-        senha : this.form.controls.senha.value,
-        dtNasc : this.form.controls.dtNasc.value,
-      }).subscribe(() =>{
-        alert('Sucesso')
-      })
-    }
+        usuario: this.form.controls.usuario.value,
+        email: this.form.controls.email.value,
+        senha: this.form.controls.senha.value,
+        dtNasc: this.form.controls.dtNasc.value,
+      }).subscribe(() => {
+        alert('Sucesso');
+        this.formSubmitAttempt = false;
+        this.Router.navigate(['/login'])
+      });
+  }else {
+    this.markAllAsTouched();
+  }
+  }
+
+  private markAllAsTouched(): void {
+    Object.values(this.form.controls).forEach(control => {
+      control.markAsTouched();
+      control.markAsDirty();
+    });
   }
 
 
+
+}

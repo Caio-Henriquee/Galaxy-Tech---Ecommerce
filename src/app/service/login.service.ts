@@ -12,11 +12,7 @@ export class LoginService {
   httpClient = inject(HttpClient);
 
   getAll(){
-    return this.httpClient.get<usuarios[]>('api/registro');
-  }
-
-  get(email : string, senha : string){
-    return this.httpClient.get<usuarios>(`api/registro/${email}&${senha}`);
+    return this.httpClient.get<usuarios[]>('api/usuariosRegistrados');
   }
 
   post(payload : LoginPayload){

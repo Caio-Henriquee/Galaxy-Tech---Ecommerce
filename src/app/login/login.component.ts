@@ -1,25 +1,53 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-
+import { Component, inject } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
+import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { LoginService } from '../service/login.service';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [RouterModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-    usuario: string= '';
-    senha: string= '';
 
+  private router = inject(Router);
+  private loginService = inject(LoginService);
 
+  form = new FormGroup({
+    email: new FormControl<string>('', { nonNullable: true, validators: [Validators.required, Validators.email] }),
+    senha: new FormControl<string>('', { nonNullable: true, validators: [Validators.required, Validators.minLength(6)] }),
+  });
 
-    fazerLogin() : void{
+  formSubmitAttempt = false;
 
+  login(): void {
+    this.formSubmitAttempt = true;
+    if (this.form.valid) {
+      const email = this.form.controls.email.value;
+      const senha = this.form.controls.senha.value;
+
+      this.loginService.getAll().subscribe(users => {
+        const user = users.find(user => user.email === email && user.senha === senha);
+        if (user) {
+          alert('Login bem-sucedido');
+          this.router.navigate(['/content']);
+        } else {
+          alert('Credenciais inválidas');
+        }
+      });
+    } else {
+      this.markAllAsTouched();
+      alert('Formulário inválido. Por favor, preencha corretamente.');
     }
+  }
 
-    sair() : void {
-
-    }
+  private markAllAsTouched(): void {
+    Object.values(this.form.controls).forEach(control => {
+      control.markAsTouched();
+      control.markAsDirty();
+    });
+  }
 }

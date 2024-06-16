@@ -79,3 +79,10 @@ input {
   color: white;
 }
 
+.validacao{
+  color: red;
+  margin-top: .4em;
+  border-left:3px solid red;
+  padding: .2em;
+  font-weight: bold;
+}
