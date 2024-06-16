@@ -35,6 +35,24 @@
       "categoria": "",
       "descricao": "",
       "url": ""
+    },
+    {
+      "id": "8c2c",
+      "nome": "",
+      "quantidade": null,
+      "valor": null,
+      "categoria": "",
+      "descricao": "",
+      "url": ""
+    },
+    {
+      "id": "ec0e",
+      "nome": "",
+      "quantidade": null,
+      "valor": null,
+      "categoria": "",
+      "descricao": "",
+      "url": ""
     }
   ],
   "usuariosRegistrados": [
@@ -127,6 +145,13 @@
       "usuario": "pedro",
       "email": "pedro@gmail.com",
       "senha": "123456",
+      "dtNasc": "2003-09-09"
+    },
+    {
+      "id": "db84",
+      "usuario": "dsadas",
+      "email": "dsadas@ga",
+      "senha": "12313123",
       "dtNasc": "2003-09-09"
     }
   ]
