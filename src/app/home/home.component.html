@@ -1,37 +1,45 @@
-<body>
-    <header>
-        <app-header-content></app-header-content>
-    </header>
-    <nav>
-        <app-navbar-content></app-navbar-content>
-    </nav>
-
-    <section id="section1">
-        <div id="img_01">
-            <img class="imagens" src="/assets/Apple-Watch-Series-9.jpg" alt="">
-        </div>
-        <div id="img_02">
-            <img class="imagens" src="/assets/06135138391161.jpg" alt="">
-        </div>
-    </section>
-
-    <section  class="section-cards">
-        <app-card-content *ngFor="let card of cards1" [card]="card"></app-card-content>
-    </section>
-
-    <section  class="section-cards">
-        <app-card-content *ngFor="let card of cards2" [card]="card"></app-card-content>
-    </section>
-
-    <footer class="footer">
-        <div class="content has-text-centered">
-          <p>
-            <strong>Galaxy Tech</strong>.
-            Ecommerce Online
-            <br>
-            Feito por Caio Henrtique e Pedro Magno
-          </p>
-        </div>
-      </footer>
-    
-</body>
+<div class="color">
+  <header>
+    <app-header-content></app-header-content>
+  </header>
+  <nav>
+    <div class="nav_bar tabs is-toggle is-small">
+      <ul>
+        <li>
+          <a routerLink="/content" routerLinkActive="is-active">
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/hardware" routerLinkActive="is-active">
+            <span>Hardware</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/acessorio" routerLinkActive="is-active">
+            <span>Perifericos</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/celulares" routerLinkActive="is-active">
+            <span>Dispositivos</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Galaxy Tech</strong>.
+        Ecommerce Online
+        <br>
+        Feito por Caio Henrique e Pedro Magno
+      </p>
+    </div>
+  </footer>
+  
+</div>

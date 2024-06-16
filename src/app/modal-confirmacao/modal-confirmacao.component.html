@@ -1,0 +1,15 @@
+<div class="modal" *ngIf="isOpen">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Modal title</p>
+        <button class="delete" aria-label="close" (click)="close()">Fechar</button>
+      </header>
+      <footer class="modal-card-foot">
+        <div class="buttons">
+          <button class="button is-success" (click)="confirm()">Save changes</button>
+          <button class="button" (click)="close()">Cancel</button>
+        </div>
+      </footer>
+    </div>
+  </div>

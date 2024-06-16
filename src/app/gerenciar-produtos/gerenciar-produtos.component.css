@@ -1,0 +1,17 @@
+
+  .colorButton{
+    background-color: #8041FA;
+    color: white ;
+  }
+
+ .colorLink{
+    color: white ;
+  }
+  
+  .centralizarButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  

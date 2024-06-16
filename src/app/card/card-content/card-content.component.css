@@ -1,24 +1,126 @@
-.container{
-    color: red;  
+.container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
     cursor: pointer;
+    width: 260px;
 }
 
-.color_text{
+.card-image img {
+    width: 100%;
+    height: 200px; /* Altura fixa para padronizar os tamanhos das imagens */
+    object-fit: cover; /* Mantém a proporção da imagem e cobre todo o espaço */
+}
+
+.color_text {
     color: #8041FA;
     display: flex;
-    
     justify-content: left;
-    
 }
 
-.color_button{
+.color_button {
     padding: 3px;
     background-color: #8041FA;
     display: flex;
-    
     justify-content: left;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 900px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-image img {
+    width: 100%;
+    max-height: 300px; /* Altura máxima para a imagem no modal */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.modal-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 5vw; /* Fonte responsiva */
+    margin-bottom: 10px;
+}
+
+.modal-price {
+    font-size: 4vw; /* Fonte responsiva */
+    margin-bottom: 10px;
+    color: #8041FA;
+}
+
+.modal-description {
+    font-size: 3vw; /* Fonte responsiva */
+    margin-bottom: 20px;
+}
+
+.modal-button {
+    background-color: #8041FA;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    .modal-title {
+        font-size: 24px;
+    }
+
+    .modal-price {
+        font-size: 20px;
+    }
+
+    .modal-description {
+        font-size: 16px;
+    }
+}
+
+.title {
+    font-size: 4vw; /* Fonte responsiva */
+}
+
+@media (min-width: 600px) {
+    .title {
+        font-size: 24px;
+    }
 }

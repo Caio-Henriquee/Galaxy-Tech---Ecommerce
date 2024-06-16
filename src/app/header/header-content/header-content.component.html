@@ -1,12 +1,25 @@
 <header class="header">
-    <div class="site-name">Galaxy Tech</div>
+    <div class="site-name">
+      <a class="colorLinkHeader" href="">Galaxy Tech</a></div>
     <div class="search-box">
-        <input type="text" placeholder="Pesquisar">
-        <button type="button"><fa-icon [icon]="pesquisa"></fa-icon></button>
+        <input type="text" placeholder="Pesquisar" (input)="search($event)">
+        <button type="button"><fa-icon [icon]="pesquisa" ></fa-icon></button>
     </div>
-    <div class="right-icons">
-        <fa-icon class="icon-1" [icon]="faCartShopping"></fa-icon>
-        <fa-icon class="icon-2" [icon]="faUser"></fa-icon>
+        <div class="navbar-item has-dropdown is-hoverable colorDrop">
+          <a class="navbar-link">
+            Produtos
+          </a>
+      
+          <div class="navbar-dropdown colorDrop">
+            <a class="navbar-item colorLink "  [routerLink]="['/gerenciar']" routerLinkActive="router-link-active">
+              Gerenciar
+            </a>
+            <a class="navbar-item colorLink "  [routerLink]="['/criar']" routerLinkActive="router-link-active">
+                Cadastrar
+              </a>
+          </div>
+        </div>
+
         
-    </div>
+ 
 </header>

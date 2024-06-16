@@ -7,3 +7,52 @@
     
     height: 100vh;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 175vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(208, 208, 208);
+}
+
+header, nav, section, footer {
+    border: 1px solid #ccc;
+    margin: 0px 10px 10px 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+header {
+    background: #e2e2e2;
+}
+
+section {
+    background: rgb(208, 208, 208);
+}
+
+footer {
+    background: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    header, nav, section, footer {
+        margin-bottom: 10px;
+    }
+
+    #section1 {
+        flex-direction: column;
+        height: auto; 
+    }
+}

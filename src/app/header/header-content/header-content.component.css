@@ -65,3 +65,23 @@
         width: 100px;
     }
 }
+
+.colorDrop{
+    background-color: rgb(255, 255, 255);
+
+    z-index: 1000; /
+
+}
+
+
+.colorLink{
+    color: rgb(0, 168, 168);
+}
+
+.colorLinkHeader{
+    color: #8041FA;
+}
+
+.colorLinkHeader:hover {
+    color: #000000;
+  }

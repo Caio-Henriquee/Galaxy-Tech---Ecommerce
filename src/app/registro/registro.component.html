@@ -7,34 +7,34 @@
   <div class="split right">
     <div class="form-container">
       <h1 class="title">Crie uma Conta</h1>
-      <form>
+      <form (submit)="registrar()">
         <div class="field">
           <label class="label">Insira seu nome</label>
           <div class="control">
-            <input type="text" placeholder="Nome">
+            <input type="text" id="usuario" placeholder="Nome">
           </div>
         </div>
         <div class="field">
           <label class="label">Insira seu email</label>
           <div class="control">
-            <input type="email" placeholder="Email">
+            <input type="email" id="email" id="email" placeholder="Email">
           </div>
         </div>
         <div class="field">
           <label class="label">Insira sua senha</label>
           <div class="control">
-            <input type="password" placeholder="Senha">
+            <input type="password" id="senha" placeholder="Senha">
           </div>
         </div>
         <div class="field">
           <label class="label">Insira sua data de nascimento</label>
           <div class="control">
-            <input type="date">
+            <input type="date" id="dtNasc">
           </div>
         </div>
         <div class="field">
           <div class="control">
-            <button routerLink="" class="button is-primary is-fullwidth">Criar</button>
+            <button type="submit" class="button is-primary is-fullwidth">Criar</button>
           </div>
         </div>
       </form>

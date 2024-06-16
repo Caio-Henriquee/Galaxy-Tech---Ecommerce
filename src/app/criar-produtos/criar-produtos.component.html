@@ -1,0 +1,58 @@
+<div class="container">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="field">
+            <label class="label">Nome do produto</label>
+            <div class="control">
+                <input class="input" type="text" formControlName="nomeProduto" placeholder="Text input">
+            </div>
+        </div>
+        
+        <div class="field">
+            <label class="label">Quantidade</label>
+            <div class="control">
+                <input class="input is-success" type="number" formControlName="quantidade" placeholder="Quantidade no estoque">
+            </div>
+        </div>
+        
+        <div class="field">
+            <label class="label">Preço</label>
+            <div class="control">
+                <input class="input is-success" type="number" formControlName="valor" placeholder="Preço">
+            </div>
+        </div>
+        
+        <div class="field">
+            <label class="label">Categoria</label>
+            <div class="control">
+                <div class="select">
+                    <select formControlName="categoria">
+                        <option value="">Escolha um</option>
+                        <option value="hardware">Hardware</option>
+                        <option value="perifericos">Perifericos</option>
+                        <option value="dispositivos">Dispositivos</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="field">
+            <label class="label">Descrição</label>
+            <div class="control">
+                <textarea class="textarea" formControlName="descricao" placeholder="Escreva aqui a descrição do produto"></textarea>
+            </div>
+        </div>
+        
+        <div class="field">
+            <label class="label">Foto</label>
+            <div class="control">
+                <input class="input" type="text" formControlName="foto" placeholder="Coloque a URL da sua foto">
+            </div>
+        </div>
+    
+        <div class="field is-grouped">
+            <div class="control">
+                <button  class="button is-link colorButton" type="submit">Cadastrar</button>
+            </div>
+        </div>
+    </form>
+</div>
