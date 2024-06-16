@@ -7,19 +7,25 @@
     </div>
         <div class="navbar-item has-dropdown is-hoverable colorDrop">
           <a class="navbar-link">
-            Produtos
+            <fa-icon [icon]="faUser"></fa-icon>
           </a>
-      
-          <div class="navbar-dropdown colorDrop">
+          <div class="navbar-dropdown colorDrop user-dropdown">
             <a class="navbar-item colorLink "  [routerLink]="['/gerenciar']" routerLinkActive="router-link-active">
-              Gerenciar
+              Gerenciar Produtos
             </a>
             <a class="navbar-item colorLink "  [routerLink]="['/criar']" routerLinkActive="router-link-active">
-                Cadastrar
+                Cadastrar Produtos
               </a>
+            <a class="navbar-item">
+              Components
+            </a>
+            <a class="navbar-item" [routerLink]="['/login']">
+              Desconectar
+            </a>
           </div>
         </div>
 
-        
- 
+
+
+
 </header>

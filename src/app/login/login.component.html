@@ -1,37 +1,44 @@
 <div class="columns">
   <div class="split left">
     <div class="centered">
+      <img src="../../assets/gaming-8727612_1280.png" class="logo" alt="logo">
       <h1 class="logo-text">Galaxy Tech</h1>
     </div>
   </div>
   <div class="split right">
     <div class="form-container">
       <h1 class="title">Faça Login</h1>
-      <form>
-        <div class="field">
+      <form [formGroup]="form" (ngSubmit)="login()">
+        <div class="field" [ngClass]="{'has-error': form.controls['email'].invalid && (form.controls['email'].dirty || form.controls['email'].touched) || formSubmitAttempt}">
           <label class="label">Insira seu email</label>
           <div class="control">
-            <input type="email" placeholder="Email">
+            <input type="email" formControlName="email" placeholder="Email">
+          </div>
+          <div *ngIf="form.controls['email'].invalid && (form.controls['email'].dirty || form.controls['email'].touched) || formSubmitAttempt">
+            <div *ngIf="form.controls['email'].errors?.['required']"><p class="validacao">Email é obrigatório.</p></div>
+            <div *ngIf="form.controls['email'].errors?.['email']"><p class="validacao">Email inválido.</p></div>
           </div>
         </div>
-        <div class="field">
+        <div class="field" [ngClass]="{'has-error': form.controls['senha'].invalid && (form.controls['senha'].dirty || form.controls['senha'].touched) || formSubmitAttempt}">
           <label class="label">Insira sua senha</label>
           <div class="control">
-            <input type="password" placeholder="Senha">
+            <input type="password" formControlName="senha" placeholder="Senha">
+          </div>
+          <div *ngIf="form.controls['senha'].invalid && (form.controls['senha'].dirty || form.controls['senha'].touched) || formSubmitAttempt">
+            <div *ngIf="form.controls['senha'].errors?.['required']"><p class="validacao">Senha é obrigatória.</p></div>
+            <div *ngIf="form.controls['senha'].errors?.['minlength']"><p class="validacao">Senha deve ter no mínimo 6 caracteres.</p></div>
           </div>
         </div>
         <div class="field">
           <div class="control">
-            <button routerLink="/content" class="button is-primary is-fullwidth">Entrar</button>
+            <button type="submit" class="button is-primary is-fullwidth">Entrar</button>
           </div>
           <br>
-            <p class="has-text-centered">
-              Não possui uma conta? <a routerLink="/registro">Cadastrar</a>
-            </p>
-
+          <p class="has-text-centered">
+            Não possui uma conta? <a routerLink="/registro">Cadastrar</a>
+          </p>
         </div>
       </form>
     </div>
   </div>
 </div>
-

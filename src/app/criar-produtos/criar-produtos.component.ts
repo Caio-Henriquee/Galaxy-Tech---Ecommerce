@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
 import ProdutosService from '../service/produtos.service';
 import { subscribe } from 'diagnostics_channel';
+import { Router } from 'express';
 @Component({
   selector: 'app-criar-produtos',
   standalone: true,
@@ -11,7 +12,7 @@ import { subscribe } from 'diagnostics_channel';
 })
 export class CriarProdutosComponent {
 
-  ProdutosService = inject(ProdutosService)
+  ProdutosService = inject(ProdutosService);
 
   form = new FormGroup({
     nomeProduto: new FormControl<string>('', {
@@ -50,6 +51,6 @@ export class CriarProdutosComponent {
     .subscribe(()=>{
       alert('sucesso');
     });
-    
+
   }
 }
