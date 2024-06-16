@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './card-content.component.css'
 })
 export class CardContentComponent {
-  @Input() card!: { image: string; title: string; preco: string; description:string };
+  @Input() card!: { nome: string; valor: number; quantidade: number; descricao:string; url: string ;categoria: string;    };
   isCardOpen = false;
 
 

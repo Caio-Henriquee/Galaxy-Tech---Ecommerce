@@ -1,15 +1,6 @@
 {
   "produtos": [
     {
-      "id": "1",
-      "nome": "Smartphone Galaxy",
-      "valor": 1200.5,
-      "quantidade": 15,
-      "descricao": "Smartphone de última geração com tela AMOLED e câmera de 108MP.",
-      "url": "https://example.com/smartphone-galaxy",
-      "categoria": "celular"
-    },
-    {
       "id": "2",
       "nome": "Notebook TechMaster",
       "valor": 3500,
@@ -35,6 +26,15 @@
       "categoria": "Acessorio",
       "descricao": "csadoadsok",
       "url": "joao"
+    },
+    {
+      "id": "082d",
+      "nome": "teste",
+      "quantidade": 5,
+      "valor": 3000,
+      "categoria": "Hardware",
+      "descricao": "dfsfds",
+      "url": "432423"
     }
   ]
 }

@@ -4,6 +4,7 @@
   </button>
   
   @for (produto of produtos; track produto.id) {
-    <app-card-gerenciar [produtos]="produto" (edit)="onEdit(produto)"></app-card-gerenciar>
+    <app-card-gerenciar [produtos]="produto"  (edit)="onEdit(produto)" (delete)="onDelete(produto)"></app-card-gerenciar>
+
   }
 </div>

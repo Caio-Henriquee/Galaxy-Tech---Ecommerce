@@ -33,6 +33,8 @@ export const routes: Routes = [
       {path: 'gerenciar',
         loadComponent: ()=> import('./gerenciar-produtos/gerenciar-produtos.component').then(m => m.GerenciarProdutosComponent) 
       },
+
+      
       {path: 'editar/:id',
         resolve:{
           produtos: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
