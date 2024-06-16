@@ -4,30 +4,32 @@
   </header>
   <nav>
     <div class="nav_bar tabs is-toggle is-small">
-      <ul>
-        <li>
-          <a routerLink="/content" routerLinkActive="is-active">
-            <span>Home</span>
-          </a>
-        </li>
-        <li>
-          <a routerLink="/hardware" routerLinkActive="is-active">
-            <span>Hardware</span>
-          </a>
-        </li>
-        <li>
-          <a routerLink="/acessorio" routerLinkActive="is-active">
-            <span>Perifericos</span>
-          </a>
-        </li>
-        <li>
-          <a routerLink="/celulares" routerLinkActive="is-active">
-            <span>Dispositivos</span>
-          </a>
-        </li>
-      </ul>
+        <ul>
+            <li routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+                <a routerLink="/content">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li routerLinkActive="active-link">
+                <a routerLink="/hardware">
+                    <span>Hardware</span>
+                </a>
+            </li>
+            <li routerLinkActive="active-link">
+                <a routerLink="/acessorio">
+                    <span>Perifericos</span>
+                </a>
+            </li>
+            <li routerLinkActive="active-link">
+                <a routerLink="/celulares">
+                    <span>Dispositivos</span>
+                </a>
+            </li>
+        </ul>
     </div>
-  </nav>
+</nav>
+
+
   <section>
     <router-outlet></router-outlet>
   </section>

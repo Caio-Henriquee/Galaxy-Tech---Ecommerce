@@ -9,15 +9,17 @@
             <div class="media">
                 <div class="media-left"></div>
                 <div class="media-content">
-                    <p class="title">{{ card.nome }}</p>
-                    <h1 class="title color_text">R$ {{ card.valor }}</h1>
+                    <div class="card-text">
+                        <p class="title">{{ card.nome }}</p>
+                        <h1 class="title color_text">R$ {{ card.valor }}</h1>
+                    </div>
                     <button class="button is-link color_button">Adicionar ao Carrinho</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Repita para outros cards -->
+
 
 </div>
 
@@ -39,3 +41,4 @@
         </div>
     </div>
 </div>
+
