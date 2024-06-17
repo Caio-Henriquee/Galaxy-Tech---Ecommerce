@@ -7,6 +7,7 @@
 .section-cards {
     display: flex;
     justify-content: space-between;  
+    gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px; 
 }
@@ -15,12 +16,39 @@
     display: flex;
     gap: 10px;
     height: 250px;
-    
 }
 
-#img_01, #img_02 {
+.img-container {
     flex: 1;
     background: #ffffff;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+@media (min-width: 1024px) {
+    .card-content {
+        flex: 1 1 calc(33.333% - 20px); 
+    }
+}
+
+@media (max-width: 1023px) {
+    #section1 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img-container {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-section1,
+    .card-section2 {
+        margin-top: 10px;
+    }
 }

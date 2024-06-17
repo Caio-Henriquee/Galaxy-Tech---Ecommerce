@@ -1,18 +1,20 @@
 <div class="main_content">
     <section id="section1">
-        <div id="img_01">
+        <div class="img-container" id="img_01">
             <img class="imagens" src="/assets/Apple-Watch-Series-9.jpg" alt="">
         </div>
-        <div id="img_02">
+        <div class="img-container" id="img_02">
             <img class="imagens" src="/assets/06135138391161.jpg" alt="">
         </div>
     </section>
 
-    <section  class="section-cards">
-        <app-card-content *ngFor="let card of cards1" [card]="card"></app-card-content>
-    </section>
+    <div class="cards-container">
+        <section class="section-cards card-section1">
+            <app-card-content class="card-content" *ngFor="let card of cards1" [card]="card"></app-card-content>
+        </section>
 
-    <section  class="section-cards">
-        <app-card-content *ngFor="let card of cards2" [card]="card"></app-card-content>
-    </section>
+        <section class="section-cards card-section2">
+            <app-card-content class="card-content" *ngFor="let card of cards2" [card]="card"></app-card-content>
+        </section>
+    </div>
 </div>
