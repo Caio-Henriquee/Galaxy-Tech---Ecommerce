@@ -161,6 +161,33 @@
       "categoria": "hardware",
       "descricao": "Processador Intel Core i9 12900K Socket LGA 1700 / 3.2GHz / 30MB ",
       "url": "https://www.visaovip.com/imagem/cpu-intel/processador-intel-core-i9-12900k-socket-lga-1700-3-2ghz-30mb/2/559089.jpg?pfdrid_c=true"
+    },
+    {
+      "id": "61ea",
+      "nome": "Processador I5",
+      "quantidade": 67,
+      "valor": 300,
+      "categoria": "hardware",
+      "descricao": "Processador Intel Core I5-12400F 18MB 2.5GHz - 4.4ghz",
+      "url": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/315050/Processador-Intel-Core-I5-12400F-12-Gera-o-2-5GHz-4-4GHz-Turbo-Hexa-Core-12-Threads-LGA-1700-BX8071512400F_1718744537_g.jpg"
+    },
+    {
+      "id": "1a7c",
+      "nome": "Headset",
+      "quantidade": 43,
+      "valor": 630,
+      "categoria": "perifericos",
+      "descricao": "Logitech PRO Gaming Headset com cancelamento de ruído passivo",
+      "url": "https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x/pro-headset-gallery-1.png?v=1"
+    },
+    {
+      "id": "bfb0",
+      "nome": "Notebook Acer Nitro",
+      "quantidade": 10,
+      "valor": 3000,
+      "categoria": "dispositivos",
+      "descricao": "\t\nNotebook Gamer Acer Nitro V15 ANV15-51-57WS I5 13",
+      "url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcREiaa5psjACEujBZSySvilDp98M0ND6PFmNQ1AwBGJ4V1ynt0eK2FCzX18elGb3rd9AaymC_lpHS7uSypw4SlUs4m6n3QJ-82fW1AsatdBuAHCqaYBJvlW1A&usqp=CAE"
     }
   ],
   "usuariosRegistrados": [
