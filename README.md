@@ -1,27 +1,61 @@
-# GalaxyTech
+Projeto CRUD de Vendedores
+Descrição 📋📋
+Este projeto tem como objetivo criar um sistema de CRUD (Create, Read, Update, Delete) para gerenciamento de produtos por vendedores. Utilizei Angular e TypeScript para o desenvolvimento do frontend, enquanto o JSON Server foi utilizado para simular um backend. A interface foi construída utilizando Bulma e Angular Material para garantir um design responsivo e moderno. O seguinte projeto foi proposto na materia da faculade de desenvolvimento front-end
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+Funcionalidades do Projeto 🚀🚀
+O projeto permite que os vendedores realizem as seguintes operações:
 
-## Development server
+Criar Produto: Adicionar novos produtos ao sistema.
+Visualizar Produtos: Listar todos os produtos cadastrados.
+Remover Produto: Excluir produtos do sistema.
+Nota: A funcionalidade de edição de produtos não está implementada nesta versão.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ferramentas Utilizadas 🛠️🛠️
+Angular: Framework para construção do frontend.
+TypeScript: Linguagem utilizada no desenvolvimento com Angular.
+JSON Server: Ferramenta para simulação de um backend RESTful.
+Bulma: Framework CSS para estilização e design responsivo.
+Angular Material: Biblioteca de componentes UI para Angular.
+Materiais e Ambiente de Desenvolvimento 🌐💻
+VSCode: Editor de código.
+Node.js: Ambiente de execução para JavaScript, utilizado para executar o JSON Server e o Angular CLI.
+Angular CLI: Interface de linha de comando para Angular, facilitando o desenvolvimento e gerenciamento do projeto.
+Estrutura do Projeto 📂📂
+src/app/: Contém os componentes do Angular, incluindo o componente principal e os componentes para listagem e criação de produtos.
+src/assets/: Contém arquivos estáticos, como imagens e ícones.
+db.json: Arquivo de configuração do JSON Server, simulando o banco de dados com os produtos.
+Instalação e Execução 🏃‍♂️🏃‍♀️
+Clone o repositório:
 
-## Code scaffolding
+bash
+Copiar código
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+Instale as dependências:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+bash
+Copiar código
+npm install
+Inicie o JSON Server:
 
-## Build
+bash
+Copiar código
+npm run server
+Inicie a aplicação Angular:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+bash
+Copiar código
+ng serve
+Acesse a aplicação no navegador:
 
-## Running unit tests
+arduino
+Copiar código
+http://localhost:4200
+Conclusão 🎉🎉
+Este projeto foi desenvolvido como parte da caminha academica, na qual passamos por diversar areas e somo desafiados o tempo todo, para esse projeto aprendemos Angular e TypeScript. A integração com o JSON Server facilitou a simulação do backend, permitindo um desenvolvimento mais realista e próximo de um ambiente de produção. A utilização do Bulma e do Angular Material garantiu uma interface moderna e intuitiva.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Próximos Passos 🔜🔜
+Implementar a funcionalidade de edição de produtos.
+Melhorar a validação de formulários.
